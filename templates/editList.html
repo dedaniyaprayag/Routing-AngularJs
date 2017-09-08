@@ -1,0 +1,30 @@
+<div ng-controller = "EditListController as editListCtrl">
+	<form name = "myForm">
+		<div class = "row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 form-col-pad">
+				<label>Project Name</label>
+				<input type ="text" class ="form-control" name = "projectName" ng-model ="editListCtrl.projectName" />
+			</div>
+		</div>
+
+		<div class = "row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 form-col-pad">
+				<label>Project Website</label>
+				<input type ="text" class ="form-control" name = "projectWebsite" ng-model ="editListCtrl.projectWebsite" />
+			</div>
+		</div>
+
+		<div class = "row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 form-col-pad">
+				<label>Project Description</label>
+				<input type ="text" class ="form-control" name = "projectDesc" ng-model ="editListCtrl.projectDesc" />
+			</div>
+		</div>
+
+		<div class = "row event-btn">
+			<button type ="submit" name ="btn-save" class= "btn btn-primary pad-right" ng-click ="editListCtrl.saveList()">Save </button>
+			 <button type ="submit" name ="btn-delete" class= "btn btn-danger pad-right" ng-click ="editListCtrl.deleteList()">Delete</button>
+			 <button type ="button" name ="btn-cancel" class= "btn btn-cancel pad-right" ng-click ="editListCtrl.goBack()">Cancel</button>
+		</div>
+	</form> 
+</div>

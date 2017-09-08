@@ -1,0 +1,1 @@
+This application uses ngRoute module for routing which requires any web server.
